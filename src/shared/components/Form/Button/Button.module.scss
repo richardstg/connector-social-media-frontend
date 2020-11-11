@@ -1,0 +1,77 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  font: inherit;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.25rem 1rem;
+  border: 1px solid $unactive-color;
+  border-radius: 4px;
+  background: $unactive-color;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  &:focus {
+    outline: none;
+  }
+  &:hover,
+  &:active {
+    background: $active-color;
+    border-color: $active-color;
+  }
+  &:disabled,
+  &:hover:disabled,
+  &:active:disabled {
+    background: $unactive-color;
+    color: white;
+    border-color: $unactive-color;
+    cursor: not-allowed;
+  }
+}
+
+.inverse {
+  border: 1px solid $unactive-color;
+  background: transparent;
+  color: $unactive-color;
+  &:hover,
+  &:active {
+    color: white;
+    background: $unactive-color;
+  }
+}
+
+.pinkInverse {
+  border: 1px solid $pink;
+  background: transparent;
+  color: $pink;
+  &:hover,
+  &:active {
+    color: white;
+    background: $pink;
+    border-color: $pink;
+  }
+}
+
+.danger {
+  background: #830000;
+  border-color: #830000;
+  &:hover,
+  &:active {
+    background: #f34343;
+    border-color: #f34343;
+  }
+}
+
+.small {
+}
+
+.big {
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
+}

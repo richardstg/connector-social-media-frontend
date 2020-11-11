@@ -1,0 +1,51 @@
+.formControl {
+  margin: 1rem 0;
+  label,
+  input,
+  textarea {
+    display: block;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  input,
+  textarea {
+    width: 100%;
+    font: inherit;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: 0.15rem 0.25rem;
+    &:focus {
+      outline: none;
+      background: #ebebeb;
+      border-color: #510077;
+    }
+  }
+}
+
+.formControlInvalid {
+  label,
+  p {
+    color: rgb(190, 0, 0);
+  }
+  input,
+  textarea {
+    border-color: rgb(190, 0, 0);
+    background: #ffd1d1;
+  }
+}
+
+.radio {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dropDown {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}

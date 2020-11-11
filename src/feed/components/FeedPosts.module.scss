@@ -1,0 +1,32 @@
+@import "../../shared/styles/variables.scss";
+
+.container {
+  border-radius: 8px;
+  padding-bottom: $vertical-rhythm;
+  margin: 0 0 $vertical-rhythm 0;
+  background-color: #f4f7f8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+.feedPosts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: $button-color;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #f4f7f8;
+  h3 {
+    margin: 0.5rem;
+    color: $button-color;
+  }
+}
+
+.link {
+  margin: $vertical-rhythm;
+  font-weight: bold;
+}

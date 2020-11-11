@@ -1,0 +1,17 @@
+html {
+  font-size: 100%;
+  //position: relative;
+  // min-height: 100vh;
+  overflow-y: scroll;
+  // -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: $base-line-height;
+  font-family: $body-font;
+  background-color: $background-color;
+  background-color: #ffffff;
+  // background-color: #f41a54;
+  overflow-x: hidden;
+}

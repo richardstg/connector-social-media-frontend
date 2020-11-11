@@ -1,0 +1,191 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  transition: all 0.2s ease-in;
+  text-align: center;
+  padding: 20px !important;
+  z-index: 110;
+  &:focus {
+    outline: none;
+  }
+  li {
+    margin-bottom: 0;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+  }
+  @media (max-width: 1199px) {
+    padding: 10px 20px !important;
+    li {
+      margin-bottom: 20px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+}
+
+.up {
+  @media (max-width: 1199px) {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.down {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.navLink {
+  color: $unactive-color;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  font-family: $header-font;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  color: $unactive-color;
+  padding: 5px 15px;
+  margin-bottom: 0;
+  fill: $unactive-color;
+  &:hover {
+    color: $active-color;
+    text-decoration: none;
+    fill: $active-color;
+  }
+}
+
+.logout {
+  border: 1px solid $unactive-color;
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+  &:hover {
+    background-color: $active-color;
+    border: 1px solid $active-color;
+    color: white;
+    fill: white;
+    cursor: pointer;
+  }
+}
+
+.activeNavLink {
+  color: $active-color;
+  &:hover {
+    color: $active-color;
+  }
+  fill: $active-color;
+}
+
+.navbarBrand {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 0;
+  svg {
+    width: 40px;
+    opacity: 0.85;
+  }
+  p {
+    margin: 0;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.svg {
+  width: 18px;
+  margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.svgGuestBook {
+  width: 14px;
+  margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Navbar Hamburger animation */
+
+$color: rgba(77, 44, 173, 1);
+
+@mixin btn($left, $top) {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  // top: $top;
+  // left: $left;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  &:active {
+    background: rgba(255, 255, 255, 0.116);
+  }
+}
+
+@mixin icon($height, $width) {
+  transition-duration: 0.5s;
+  position: absolute;
+  height: $height;
+  width: $width;
+  // top: 30px;
+  background-color: $color;
+  margin-left: 1.75px;
+}
+
+@mixin icon-before($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  content: "";
+  top: $top;
+  right: 0;
+}
+
+@mixin icon-after($height, $width, $top) {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  content: "";
+  top: $top;
+  right: 0;
+}
+
+.toggler {
+  border: none !important;
+  outline: none !important;
+  @include btn(0, 0);
+  .icon {
+    @include icon(4px, 30px);
+    &:before {
+      @include icon-before(4px, 30px, -10px);
+    }
+    &:after {
+      @include icon-after(4px, 30px, 10px);
+    }
+  }
+  &.open {
+    .icon {
+      transition-duration: 0.5s;
+      background: transparent;
+      &:before {
+        transform: rotateZ(45deg) scaleX(1.25) translate(6.5px, 6.5px);
+      }
+      &:after {
+        transform: rotateZ(-45deg) scaleX(1.25) translate(6px, -6px);
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

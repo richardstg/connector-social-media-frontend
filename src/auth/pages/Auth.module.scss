@@ -1,0 +1,38 @@
+@import "../../shared/styles/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: $vertical-rhythm * 5;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  img {
+    width: 40%;
+    // margin: 0 auto;
+    opacity: 0.7;
+  }
+}
+
+.button {
+  width: 100%;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+.logoText {
+  font-weight: bold;
+  color: $unactive-color;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+  width: 1.8rem;
+}

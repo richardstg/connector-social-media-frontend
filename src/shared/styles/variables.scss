@@ -1,0 +1,16 @@
+/* SCSS Variables */
+$base-line-height: 1.6;
+$base-font-size: 1rem;
+$vertical-rhythm: $base-line-height * $base-font-size;
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Open Sans", sans-serif;
+
+$header-color: rgba(0, 0, 0, 0.9);
+$body-color: rgba(0, 0, 0, 0.85);
+$button-color: rgba(77, 44, 173, 1);
+$light-color: #f4f7f8;
+$background-color: rgba(77, 44, 173, 0.01);
+$unactive-color: rgba(77, 44, 173, 1);
+$active-color: rgba(77, 44, 173, 0.8);
+$pink: #ec2552;

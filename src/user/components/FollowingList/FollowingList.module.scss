@@ -1,0 +1,46 @@
+@import "../../../shared/styles/variables.scss";
+
+.container {
+  border-radius: 8px;
+  padding-bottom: $vertical-rhythm;
+  margin: 0 0 $vertical-rhythm 0;
+  background-color: #f4f7f8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.26);
+}
+
+.usersWrapper {
+  margin-left: $vertical-rhythm;
+  margin-right: $vertical-rhythm;
+}
+
+.users {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+}
+
+.modal {
+  @media screen and (max-width: 640px) {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: transparent;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  h3 {
+    margin: 0.5rem;
+    color: $button-color;
+  }
+}
+
+.link {
+  margin-left: $vertical-rhythm;
+  font-weight: bold;
+}

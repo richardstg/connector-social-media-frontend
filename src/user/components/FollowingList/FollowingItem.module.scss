@@ -1,0 +1,53 @@
+@import "../../../shared/styles/variables.scss";
+@import "../../../shared/styles/mixins.scss";
+
+.followingItem {
+  padding: 3px;
+  button {
+    margin-top: 0;
+  }
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 0.9rem;
+  min-height: 1rem;
+  margin-bottom: 8px;
+}
+
+.image {
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: 0.1rem;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.modal {
+  padding: 10px;
+}
+
+.svg {
+  width: 16px;
+  margin-left: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  @include link;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 425px) {
+  .name {
+    font-size: 0.8rem;
+  }
+  .link {
+    font-size: 0.8rem;
+  }
+  .svg {
+    width: 15px;
+  }
+}

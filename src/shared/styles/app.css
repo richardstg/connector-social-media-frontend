@@ -1,0 +1,111 @@
+/* Import bootstrap */
+@import url(c:\Users\jag\Projects Coding\sakchatri\src\styles\bootstrap.css);
+/* Import SCSS modules */
+/* SCSS Variables */
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Open Sans", sans-serif;
+  background-color: #2f3238;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 1.1rem;
+  /* Base font size */
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0;
+  margin-bottom: 1.76rem;
+  /* Base vertical spacing: (1.4 * 1) = 1.4 */
+  color: #ebebeb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: "Proza Libre", sans-serif;
+  color: #eeeeee;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.76rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.76rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1.76rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 990px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.65rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=app.css.map */

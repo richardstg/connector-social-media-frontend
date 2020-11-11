@@ -1,0 +1,7 @@
+@import "../../styles/variables.scss";
+
+.layout {
+  padding-top: $vertical-rhythm * 4;
+  background-color: $background-color;
+  min-height: 100vh;
+}
